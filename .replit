@@ -1,0 +1,15 @@
+run = "python3 -m http.server 8080"
+modules = ["nodejs-20"]
+
+[env]
+PORT = "8080"
+
+[files]
+entrypoint = "index.html"
+
+[interpreter]
+command = ["python3", "-m", "http.server", "8080"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
